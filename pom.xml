@@ -36,13 +36,9 @@
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
-      </plugin>
+      </plugin>  
+    
       
-      <plugin>
-         <groupId>org.apache.maven.plugins</groupId>
-         <artifactId>maven-war-plugin</artifactId>
-         <version>2.2</version>
-      </plugin>      
              
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
@@ -56,13 +52,16 @@
         <configuration>
           <reportPlugins>
             <plugin>
+                  <artifactId>maven-war-plugin</artifactId>
+            </plugin>   
+            <plugin>
               <artifactId>maven-checkstyle-plugin</artifactId>
             </plugin>
 
             <plugin>
               <artifactId>maven-jxr-plugin</artifactId>
             </plugin>
-
+            
             <plugin>
               <artifactId>maven-javadoc-plugin</artifactId>
             </plugin>
